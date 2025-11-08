@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>programoo</groupId>
   <artifactId>myapp</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>2025</version>
   <packaging>war</packaging>
   
   <parent>
@@ -15,13 +15,13 @@
   </parent>
 
   <dependencies>
-    <!-- REST API support -->
+		<!-- REST API support -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
 
-    <!-- For unit testing -->
+		<!-- For unit testing -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
@@ -31,11 +31,13 @@
 
   <build>
     <plugins>
-      <!-- Allow using mvn spring-boot:run -->
+			<!-- Allow using mvn spring-boot:run -->
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
     </plugins>
+    
+	<finalName>myapp</finalName>
   </build>
 </project>
